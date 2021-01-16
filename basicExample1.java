@@ -1,14 +1,21 @@
 public class Manager{
 
      public static void main(String []args){
-        Calculator c1 = new Calculator();
-        float result = c1.divide(4,5);
-        
-        System.out.println( result );
+        Calculator c = new Calculator();
+        // c.multiplicationTable(0, 10);
+        c.dogAndCat(0, 10);
      }
      
 }
 
+
+class PlayGround{
+    public void ForLoops(){
+        
+        
+        
+    }
+}
 
 class Calculator{
     
@@ -23,7 +30,13 @@ class Calculator{
          
       public float divide(float number1, float number2){
          return number1 / number2;    }
-         
-         
 
+      public void dogAndCat(int start, int end){
+          // practice using a for loop
+          for (int i = 0; i<10 ; i++){
+              System.out.println(i);
+          }
+          
+    
+      }    
 }
