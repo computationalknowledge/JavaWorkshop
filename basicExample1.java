@@ -1,12 +1,29 @@
-public class Calculator{
+public class Manager{
 
      public static void main(String []args){
-        System.out.println( add(2,2) );
+        Calculator c1 = new Calculator();
+        float result = c1.divide(4,5);
+        
+        System.out.println( result );
      }
      
-     public static int add(int number1, int number2){
+}
+
+
+class Calculator{
+    
+      public float add(float number1, float number2){
+         return number1 + number2;    }
+   
+      public float subtract(float number1, float number2){
+         return number1 - number2;    }
+    
+      public float multiply(float number1, float number2){
+         return number1 * number2;    }
          
-         return number1 + number2;
+      public float divide(float number1, float number2){
+         return number1 / number2;    }
          
-     }
+         
+
 }
